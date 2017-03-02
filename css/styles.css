@@ -296,12 +296,12 @@ body .demo-blog {
 }
 .mdl-card__supporting-text {
   border: 0;
-  display: -webkit-flex;
+  display: inline;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .mdl-card__supporting-text p {
   max-width: 512px;
