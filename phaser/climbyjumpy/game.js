@@ -8,8 +8,8 @@ var climbTurnSpeedSlow = 2000;
 var climbGroup;
 var obstacleGroup;
 
-var UpobstacleSpeed = 60;
-var UpobstacleDelay = 3000;
+var UpobstacleSpeed = 90;
+var UpobstacleDelay = 1500;
 
 var updelay = 0;
 var downdelay = 0;
