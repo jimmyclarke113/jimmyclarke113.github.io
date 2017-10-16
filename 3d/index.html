@@ -3,14 +3,13 @@
     <script src="aframe.min.js"></script>
   </head>
   <body>
-      <a-scene>
-        <a-assets>
-          <a-asset-item id="tree" src="climber.dae"></a-asset-item>
-        </a-assets>
-        <a-sky color="#ECECEC"></a-sky>
-        <a-entity collada-model="#tree" scale"0.1 0.1 0.1"></a-entity>
-      </a-scene>
-      
-    
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="tree-obj" src="climber.obj"></a-asset-item>
+        <a-asset-item id="tree-mtl" src="climber.mtl"></a-asset-item>
+      </a-assets>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+    </a-scene>
   </body>
 </html>
