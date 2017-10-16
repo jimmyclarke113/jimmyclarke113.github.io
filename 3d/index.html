@@ -9,7 +9,17 @@
         <a-asset-item id="tree-mtl" src="climber.mtl"></a-asset-item>
       </a-assets>
       <a-sky color="#ECECEC"></a-sky>
-      <a-obj-model src="#tree-obj" mtl="#tree-mtl" position = "0 0 -2" scale="3 3 3"></a-obj-model>
+      <a-obj-model src="#tree-obj" mtl="#tree-mtl" position = "0 0 -5" scale="3 3 3">
+      <a-animation
+        attribute="rotation"
+        from="20 0 0"
+        to="20 360 0"
+        direction="alternate"
+        dur="4000"
+        repeat="indefinite"
+        easing="ease">
+      </a-animation>
+      </a-obj-model>
     </a-scene>
   </body>
 </html>
