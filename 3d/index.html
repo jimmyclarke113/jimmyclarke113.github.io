@@ -3,15 +3,14 @@
     <script src="aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <img id="my-texture" src="Mpirical_NetX_2.0_5G - FLAT.png">
-      </a-assets>
-
-      <a-entity id="radio" position="0 0 0" >
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" scale="1 1 1" visible="true" material="color:#FFC65D" ></a-box>
-      </a-entity>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
+      <a-scene>
+        <a-assets>
+          <a-asset-item id="tree" src="climber.dae"></a-asset-item>
+        </a-assets>
+        <a-sky color="#ECECEC"></a-sky>
+        <a-entity collada-model="#tree"></a-entity>
+      </a-scene>
+      
+    
   </body>
 </html>
