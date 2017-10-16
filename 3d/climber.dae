@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
     </contributor>
-    <created>2017-10-16T23:41:29</created>
-    <modified>2017-10-16T23:41:29</modified>
+    <created>2017-10-16T23:56:25</created>
+    <modified>2017-10-16T23:56:25</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -15,6 +15,49 @@
       <init_from>Untitled.png</init_from>
     </image>
   </library_images>
+  <library_effects>
+    <effect id="Material_008-effect">
+      <profile_COMMON>
+        <newparam sid="Untitled-surface">
+          <surface type="2D">
+            <init_from>Untitled</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Untitled-sampler">
+          <sampler2D>
+            <source>Untitled-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Untitled-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_008-material" name="Material_008">
+      <instance_effect url="#Material_008-effect"/>
+    </material>
+  </library_materials>
   <library_geometries>
     <geometry id="Cylinder01-mesh" name="Cylinder01">
       <mesh>
@@ -50,7 +93,7 @@
         <vertices id="Cylinder01-mesh-vertices">
           <input semantic="POSITION" source="#Cylinder01-mesh-positions"/>
         </vertices>
-        <polylist count="1442">
+        <polylist material="Material_008-material" count="1442">
           <input semantic="VERTEX" source="#Cylinder01-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Cylinder01-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#Cylinder01-mesh-map-0" offset="2" set="0"/>
@@ -65,7 +108,15 @@
     <visual_scene id="Scene" name="Scene">
       <node id="Cylinder01" name="Cylinder01" type="NODE">
         <matrix sid="transform">0.1 0 0 0 0 0.1 -1.74846e-8 0 0 1.74846e-8 0.1 0 0 0 0 1</matrix>
-        <instance_geometry url="#Cylinder01-mesh" name="Cylinder01"/>
+        <instance_geometry url="#Cylinder01-mesh" name="Cylinder01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_008-material" target="#Material_008-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
       </node>
     </visual_scene>
   </library_visual_scenes>
