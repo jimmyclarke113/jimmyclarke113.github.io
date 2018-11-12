@@ -4,18 +4,12 @@
 <script src="aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
-    <!--
-  <a-assets>
-    <a-asset-item id="tree-obj" src="NetXModels-Rendering.obj"></a-asset-item>
-    <a-asset-item id="tree-mtl" src="NetXModels-Rendering.mtl"></a-asset-item>
-  </a-assets>
--->
-    <!-- create your content here. just a box for now -->
-    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-    <!--<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>-->
-    <!-- define a camera which will move according to the marker position -->
-    <a-marker preset='kanji'></a-marker>
-    <!-- add a simple camera -->
+    <!-- define your markers -->
+    <a-marker-camera preset='kanji'>
+      <!-- here define the content to display on top of the marker -->
+      <a-box position='0 0.5 0' material='color: red;'></a-box>
+    </a-marker>
+    <!-- define a simple camera -->
     <a-entity camera></a-entity>
   </a-scene>
 </body>
