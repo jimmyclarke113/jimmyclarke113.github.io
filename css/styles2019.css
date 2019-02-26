@@ -28,7 +28,7 @@ main .content:first-child{
   float:right;
   padding:20%;
   width:200px;
-  
+}  
 .content{
   background-color:#fff;
   border-radius:2px;
