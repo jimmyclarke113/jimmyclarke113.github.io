@@ -4,7 +4,7 @@ title: Jimmy Clarke
 ---
 <div class="menu"></div>
 {% for post in site.posts %}
-<div class="content">
+<div class="content {% if forloop.first == true %}first{% endif %}">
 	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="contentTitle" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
 			<h3>{{ post.title }}</h3>
