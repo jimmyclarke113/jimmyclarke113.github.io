@@ -35,7 +35,7 @@ main{
   margin:0 auto;
   min-height:360px;
 }
-main .content:first-of-type{
+.content.first{
   float:left;
   width: 688px;
 }
