@@ -42,6 +42,9 @@ list-stlye:none;
   float:left;
   width: calc(100% - 216px);
 }
+main .content:not(.first){
+  clear:both;
+}
 .contentTitle{
   background-color: rgb(255,171,64);
   background-repeat: repeat;
