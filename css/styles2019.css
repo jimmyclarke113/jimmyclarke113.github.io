@@ -37,7 +37,7 @@ main{
 }
 main .content:first-of-type{
   float:left;
-  width: width: calc(100% - 232px);
+  width: 688px;
 }
 .contentTitle{
   background-size: cover;
