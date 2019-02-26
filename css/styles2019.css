@@ -42,7 +42,10 @@ list-stlye:none;
   border-radius:50px;
 }
 .menu .logo{
-  background-image:url('images/jc_round_2019.png');
+  background-image:url('images/jc_round_2019.jpg');
+  height:100px;
+  width:100px;
+  border-radius:100px;
 }
 .content{
   background-color:#fff;
