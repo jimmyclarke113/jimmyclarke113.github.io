@@ -5,15 +5,15 @@ title: Jimmy Clarke
 <div class="menu"></div>
 {% for post in site.posts %}
 <div class="content {% if forloop.first == true %}first{% endif %}">
-	<a href="{{ post.url }}" title="{{ post.title }}">
-		<div class="contentTitle" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
-			<h3>{{ post.title }}</h3>
+	<a href="{{ post.url }}" title="{{post.title}}">
+		<div class="contentTitle {{post.category}}" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
+			<h3>{{post.title}}</h3>
 		</div>
 		<div class="contentDescription">
-			{{ post.description }}
+			{{post.description}}
 		</div>
 		<div class="contentFooter">
-			<strong>By {{ post.author}}</strong><span>{{ post.date | date_to_string }}</span>
+			<strong>By {{post.author}}</strong><span>{{ post.date | date_to_string }}</span>
 		</div>
 	</a>
 </div>
