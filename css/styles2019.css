@@ -1,0 +1,39 @@
+body::before {
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  background-image: url('/images/askambeach.jpg');
+}
+
+body{
+  color:#616161;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  padding: 50px 50px 0 50px;
+}
+.content{
+  background-color:#fff;
+  border-radius:2px;
+  margin:8px;
+  min-height:360px;
+}
+.contentTitle{
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contentDescription{
+}
+.contentFooter{
+}
+footer{
+  background-color:#fff;
+  height: 120px;
+  margin-top:80px;
+  padding: 40px;
+}
