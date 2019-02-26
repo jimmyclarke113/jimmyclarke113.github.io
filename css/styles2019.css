@@ -46,6 +46,12 @@ list-stlye:none;
 main .content:not(.first){
   clear:both;
 }
+.content a{
+  text-decoration:none;
+}
+.content:hover{
+  opacity:0.9;
+}
 .contentTitle{
   background-color: rgb(255,171,64);
   background-repeat: repeat;
@@ -63,6 +69,7 @@ main .content:not(.first){
   bottom:0;
   background-color:#ffab40;
   padding:5px;
+  color:#fff;
 }
 .contentDescription{
 }
