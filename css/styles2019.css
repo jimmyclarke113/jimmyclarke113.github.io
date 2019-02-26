@@ -29,7 +29,7 @@ main{
   top: 0;
   left: 0;
   background-color: #fff;
-  vertical-align: top;
+  padding: 0 10px 5px 5px;
 }
 .menu{
   background-color:#fff;
