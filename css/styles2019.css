@@ -22,7 +22,7 @@ body{
 .content{
   background-color:#fff;
   border-radius:2px;
-  margin:8px;
+  margin:0 auto;
   min-height:360px;
   max-width: 900px;
 }
