@@ -19,10 +19,6 @@ body{
   padding-top: 50px;
   margin:0;
 }
-main .content:first-child{
-  float:left;
-  width: width: calc(100% - 232px);
-}
 .menu{
   background-color:#fff;
   float:right;
@@ -35,6 +31,10 @@ main .content:first-child{
   margin:0 auto;
   min-height:360px;
   max-width: 900px;
+}
+main .content:first-of-type{
+  float:left;
+  width: width: calc(100% - 232px);
 }
 .contentTitle{
   background-size: cover;
