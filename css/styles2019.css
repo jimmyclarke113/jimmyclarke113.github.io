@@ -37,6 +37,7 @@ list-stlye:none;
   border-radius:2px;
   margin:0 auto;
   min-height:360px;
+  margin-bottom:16px;
 }
 .content.first{
   float:left;
