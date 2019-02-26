@@ -19,6 +19,10 @@ body{
   padding-top: 50px;
   margin:0;
 }
+main{
+  max-width: 900px;
+  margin:0 auto;
+}
 .menu{
   background-color:#fff;
   float:right;
@@ -30,7 +34,6 @@ body{
   border-radius:2px;
   margin:0 auto;
   min-height:360px;
-  max-width: 900px;
 }
 main .content:first-of-type{
   float:left;
