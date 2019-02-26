@@ -67,7 +67,6 @@ main .content:not(.first){
   position:absolute;
   left:0;
   bottom:30px;
-  background-color:#ffab40;
   padding:5px;
   color:#fff;
   font-weight:400;
@@ -92,4 +91,16 @@ footer{
   clear:both;
   margin-top:80px;
   padding: 40px;
+}
+.P{
+  background-color:#feb236;
+}
+.3D{
+  background-color:#6b5b95;
+}
+.T{
+  background-color:#d64161
+}
+.M{
+  background-color:#878f99
 }
