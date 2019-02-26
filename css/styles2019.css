@@ -66,10 +66,13 @@ main .content:not(.first){
   margin:0;
   position:absolute;
   left:0;
-  bottom:0;
+  bottom:30px;
   background-color:#ffab40;
   padding:5px;
   color:#fff;
+  font-weight:400;
+  min-width:40%;
+  text-align:left;
 }
 .contentDescription{
 }
