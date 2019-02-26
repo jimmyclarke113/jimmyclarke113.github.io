@@ -19,6 +19,16 @@ body{
   padding-top: 50px;
   margin:0;
 }
+main .content:first-child{
+  float:left;
+  width: width: calc(100% - 232px);
+}
+.menu{
+  background-color:#fff;
+  float:right;
+  padding:20%;
+  width:200px;
+  
 .content{
   background-color:#fff;
   border-radius:2px;
