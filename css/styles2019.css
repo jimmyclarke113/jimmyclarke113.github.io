@@ -39,6 +39,10 @@ main{
 }
 .menu ul{
 list-stlye:none;
+  border-radius:50px;
+}
+.menu .logo{
+  background-image:url('/css/images/jc_round_2019.png');
 }
 .content{
   background-color:#fff;
