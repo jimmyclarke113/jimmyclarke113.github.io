@@ -21,7 +21,7 @@ body{
 }
 main .content:first-child{
   float:left;
-  width: width: calc(900px - 232px);
+  width: width: calc(100% - 232px);
 }
 .menu{
   background-color:#fff;
