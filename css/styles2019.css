@@ -9,7 +9,7 @@ body::before {
   bottom: 0;
   top: 0;
   position: fixed;
-  background-image: url('/images/glencoe_web.jpg');
+  background-image: url('images/glencoe_web.jpg');
 }
 
 body{
@@ -42,7 +42,7 @@ list-stlye:none;
   border-radius:50px;
 }
 .menu .logo{
-  background-image:url('/css/images/jc_round_2019.png');
+  background-image:url('images/jc_round_2019.png');
 }
 .content{
   background-color:#fff;
