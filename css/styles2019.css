@@ -15,7 +15,8 @@ body::before {
 body{
   color:#616161;
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  padding: 0 50px;
+  padding:0;
+  padding-top: 50px;
   margin:0;
 }
 .content{
