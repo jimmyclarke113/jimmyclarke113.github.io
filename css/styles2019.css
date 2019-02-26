@@ -39,7 +39,7 @@ list-stlye:none;
 }
 .content.first{
   float:left;
-  width: 684px;
+  width: calc(100% - 216px);
 }
 .contentTitle{
   background-size: cover;
