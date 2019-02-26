@@ -2,7 +2,18 @@
 layout: jimmyclarke2019
 title: Jimmy Clarke
 ---
-<div class="menu"></div>
+<div class="menu">
+	<a href="/">
+		<div class="logo"></div>
+		<div>Jimmy Clarke</div>
+	</a>
+	<ul>
+		<li><a href="" class="Ptext">Photography</a></li>
+		<li><a href="" class="Dtext">3D Printing</a></li>
+		<li><a href="" class="Ttext">Travel</a></li>
+		<li><a href="" class="Mtext">Misc</a></li>
+	</ul>
+</div>
 {% for post in site.posts %}
 <div class="content {post.category}} {% if forloop.first == true %}first{% endif %}">
 	<a href="{{ post.url }}" title="{{post.title}}">
