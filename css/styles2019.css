@@ -36,6 +36,7 @@ main{
   float:right;
   height:360px;
   width:200px;
+  border-top-right-radius:100px;
 }
 .menu ul{
 list-stlye:none;
@@ -46,6 +47,7 @@ list-stlye:none;
   height:100px;
   width:100px;
   border-radius:100px;
+  margin: 50px auto;
 }
 .content{
   background-color:#fff;
