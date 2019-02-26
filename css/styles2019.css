@@ -24,6 +24,7 @@ body{
   border-radius:2px;
   margin:8px;
   min-height:360px;
+  max-width: 900px;
 }
 .contentTitle{
   background-size: cover;
