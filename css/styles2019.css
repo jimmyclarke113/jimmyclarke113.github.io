@@ -45,7 +45,6 @@ list-stlye:none;
 }
 main .content:not(.first){
   clear:both;
-  margin-bottom:16px;
 }
 .contentTitle{
   background-color: rgb(255,171,64);
