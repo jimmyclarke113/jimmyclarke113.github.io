@@ -3,15 +3,17 @@ layout: jimmyclarke2019
 title: Jimmy Clarke
 ---
 {% for post in site.posts %}
-<div>
-	<div>
-		<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-	</div>
-	<div>
-		{{ post.description }}
-	</div>
-	<div>
-		<strong>By {{ post.author}}</strong><span>{{ post.date | date_to_string }}</span>
-	</div>
+<div class="content">
+	<a href="{{ post.url }}" title="{{ post.title }}">
+		<div class="contentTitle" style="background-image:{{post.image}};min-height:{{post.height}}px;">
+			<h3>{{ post.title }}</h3>
+		</div>
+		<div class="contentDescription">
+			{{ post.description }}
+		</div>
+		<div class="contentFooter">
+			<strong>By {{ post.author}}</strong><span>{{ post.date | date_to_string }}</span>
+		</div>
+	</a>
 </div>
 {% endfor %}
