@@ -5,7 +5,7 @@ title: Jimmy Clarke
 {% for post in site.posts %}
 <div class="content">
 	<a href="{{ post.url }}" title="{{ post.title }}">
-		<div class="contentTitle" style="background-image:{{post.image}};min-height:{{post.height}}px;">
+		<div class="contentTitle" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
 			<h3>{{ post.title }}</h3>
 		</div>
 		<div class="contentDescription">
