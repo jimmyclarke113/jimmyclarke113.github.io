@@ -66,6 +66,7 @@ list-stlye:none;
 }
 footer{
   background-color:#fff;
+  clear:both;
   margin-top:80px;
   padding: 40px;
 }
