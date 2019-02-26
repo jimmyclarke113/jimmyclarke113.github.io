@@ -54,6 +54,15 @@ main .content:not(.first){
   background-origin: padding-box;
   background-attachment: scroll;
   box-sizing: border-box;
+  position:relative;
+}
+.contentTitle h3{
+  margin:0;
+  position:absolute;
+  left:0;
+  bottom:0;
+  background-color:#ffab40;
+  padding:5px;
 }
 .contentDescription{
 }
