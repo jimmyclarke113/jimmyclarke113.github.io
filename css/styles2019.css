@@ -145,6 +145,7 @@ footer{
   background-origin: padding-box;
   background-attachment: scroll;
   box-sizing: border-box;
+  position:relative;
 }
 .postTitle{
   margin:0;
