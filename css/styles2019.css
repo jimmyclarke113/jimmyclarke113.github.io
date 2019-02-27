@@ -164,7 +164,7 @@ footer{
 }
 .postContent{
   border-top: 1px solid rgba(0,0,0,0.1);
-  margin-bottom:32px;
+  padding-bottom:32px;
 }
 .postContent p{
   margin-left:10%;
