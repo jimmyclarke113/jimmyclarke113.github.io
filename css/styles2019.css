@@ -133,3 +133,34 @@ footer{
 .Mtext{
   color:#878f99
 }
+.post{
+  background-image:#fff;
+}
+.postHero{
+  background-color: rgb(255,171,64);
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-origin: padding-box;
+  background-attachment: scroll;
+  box-sizing: border-box;
+}
+.postTitle{
+  margin:0;
+  position:absolute;
+  left:0;
+  bottom:30px;
+  padding:5px;
+  color:#fff;
+  font-weight:400;
+  min-width:40%;
+  text-align:left;
+}
+.postMeta{
+}
+.postContent{
+}
+.postContent p{
+  margin-left:10%;
+  margin-right:10%;
+}
