@@ -159,6 +159,8 @@ footer{
   text-align:left;
 }
 .postMeta{
+  padding:16px;
+  height:40px;
 }
 .postContent{
 }
