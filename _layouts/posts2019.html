@@ -5,10 +5,10 @@ layout: jimmyclarke2019
 
 <div class="post">
 	<div class="postHero" style="background-image:url('{{page.image}}');height:{{page.height}}px">
-		<h3 class="postTitle">{{page.title}}</h3>
+		<h3 class="postTitle {{page.category}}">{{page.title}}</h3>
 	</div>
 	<div class="postMeta">
-		<span class="postCategory {{post.category}}">{{post.category}}</span>
+		<span class="postCategory {{page.category}}">{{page.category}}</span>
 		<strong>{{page.author}}</strong>
 		<span>{{ page.date | date_to_string }}</span>
 		<i class="material-icons">share</i>
