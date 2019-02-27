@@ -1,18 +1,19 @@
 ---
 layout: jimmyclarke2019
 ---
-<div><i class="material-icons" role="presentation">arrow_back</i></div>
+<div><a href="/"><i class="material-icons" role="presentation">arrow_back</i></a></div>
 
-<div>
-	<div style="background-image:url('{{page.image}}');height:{{page.height}}px">
-		<h3>{{page.title}}</h3>
+<div class="post">
+	<div class="postHero" style="background-image:url('{{page.image}}');height:{{page.height}}px">
+		<h3 class="postTitle">{{page.title}}</h3>
 	</div>
-	<div>
+	<div class="postMeta">
+		<span class="postCategory {{post.category}}">{{post.category}}</span>
 		<strong>{{page.author}}</strong>
 		<span>{{ page.date | date_to_string }}</span>
 		<i class="material-icons">share</i>
 	</div>
-	<div>
+	<div class="postContent">
 		{{content}}
 	</div>
 </div>
