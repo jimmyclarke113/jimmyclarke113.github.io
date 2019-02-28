@@ -41,11 +41,14 @@ main{
   border-radius:50px;
   padding-left:0;
   margin-bottom:20px;
-  width:130px;
+  width:140px;
 }
 .menu li{
   padding: 5px 5px 5px 30px;
   margin: 2px 0;
+}
+.menu li a{
+  color:#fff;
 }
 .menu .logo{
   background-image:url('images/jc_round_2019.jpg');
