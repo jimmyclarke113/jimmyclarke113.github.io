@@ -17,5 +17,9 @@ layout: jimmyclarke2019
 	<div class="postContent">
 		{{content}}
 	</div>
-	<div class="postFooter">{{page.tags}}</div>
+	<div class="postFooter">
+		{% for post in site.posts %}
+			{{tag}}
+		{% endfor %}
+	</div>
 </div>
