@@ -57,7 +57,7 @@ list-stlye:none;
   min-height:360px;
   margin-bottom:16px;
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   .content.first{
     float:left;
     width: calc(100% - 216px);
