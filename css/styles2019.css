@@ -57,9 +57,11 @@ list-stlye:none;
   min-height:360px;
   margin-bottom:16px;
 }
-.content.first{
-  float:left;
-  width: calc(100% - 216px);
+@media only screen and (min-width: 500px) {
+  .content.first{
+    float:left;
+    width: calc(100% - 216px);
+  }
 }
 main .content:not(.first){
   clear:both;
