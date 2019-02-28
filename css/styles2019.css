@@ -41,10 +41,11 @@ main{
   border-radius:50px;
   padding-left:0;
   margin-bottom:20px;
-  width:113px;
+  width:130px;
 }
 .menu li{
-  padding-left:40px;
+  padding: 5px 5px 5px 30px;
+  margin: 10px 0;
 }
 .menu .logo{
   background-image:url('images/jc_round_2019.jpg');
@@ -137,7 +138,7 @@ footer{
 .T{
   background-color:#d64161
 }
-.M{
+.R{
   background-color:#878f99
 }
 .Ptext{
@@ -149,7 +150,7 @@ footer{
 .Ttext{
   color:#d64161
 }
-.Mtext{
+.Rtext{
   color:#878f99
 }
 .post{
