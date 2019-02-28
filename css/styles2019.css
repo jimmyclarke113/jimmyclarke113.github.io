@@ -171,6 +171,11 @@ footer{
   padding: 5px;
   color: #fff;
 }
+.postDate{
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 15px;
+}
 .postShare{
   float:right;
 }
