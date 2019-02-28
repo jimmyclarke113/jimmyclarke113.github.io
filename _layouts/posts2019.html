@@ -17,8 +17,10 @@ layout: jimmyclarke2019
 		{{content}}
 	</div>
 	<div class="postFooter">
-		{% for tag in page.tags %}
-			<span>{{tag}}</span>
-		{% endfor %}
+		<ul>
+			{% for tag in page.tags %}
+				<li>{{tag}}</li>
+			{% endfor %}
+		</ul>
 	</div>
 </div>
