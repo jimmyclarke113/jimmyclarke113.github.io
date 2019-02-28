@@ -172,8 +172,7 @@ footer{
   color: #fff;
 }
 .postShare{
-  display: inline-block;
-  text-align:right;
+  float:right;
 }
 .postContent{
   border-top: 1px solid rgba(0,0,0,0.1);
