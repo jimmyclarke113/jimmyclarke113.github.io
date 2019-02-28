@@ -34,7 +34,7 @@ main{
 }
 .menu{
   background-color:#fff;
-  border-top-right-radius:100px;
+  border-top-right-radius:50px;
 }
 .menu ul{
 list-stlye:none;
@@ -45,7 +45,8 @@ list-stlye:none;
   height:100px;
   width:100px;
   border-radius:100px;
-  margin: 50px auto;
+  float:right;
+  margin: 7px 8px;
 }
 .content{
   background-color:#fff;
@@ -63,6 +64,13 @@ list-stlye:none;
     float:right;
     height:360px;
     width:200px;
+  }
+  .menu .logo{
+    margin: 50px auto;
+    float:none;
+  }
+  .menu{
+    border-top-right-radius:100px;
   }
 }
 main .content:not(.first){
