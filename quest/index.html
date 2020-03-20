@@ -14,19 +14,11 @@
       <!-- camera -->
       <a-entity id="head" camera="userHeight: 1.6" look-controls headposi></a-entity>
 
-      <a-entity id="left-hand" vive-controls="hand: left; model:false" oculus-touch-controls="hand: left ;model:false;" windows-motion-controls="hand: left; model:false;" haptics="dur: 200; intensity: 1.0;force :1" trigger-button-listener ocu-button-listener
-        fistlposi>
-        <a-entity id="left-fist_q" rotation="0 0 0" fistlposi>
-      <a-entity id="left-fist_p" fistlposi></a-entity>
-  </a-entity>
+      <a-entity id="left-hand" vive-controls="hand: left; model:false" oculus-touch-controls="hand: left ;model:false;" windows-motion-controls="hand: left; model:true;" haptics="dur: 200; intensity: 1.0;force :1" trigger-button-listener ocu-button-listener>
       </a-entity>
-      <a-entity id="right-hand" vive-controls="hand: right; model:false " oculus-touch-controls="hand: right; model:false;" windows-motion-controls="hand: right; model:false;" haptics="dur: 200; intensity: 1.0;force :1" trigger-button-listener ocu-button-listener
-        fistrposi>
-
-        <a-entity id="right-fist_q" rotation="0 0 0" fistrposi>
-      <a-entity id="right-fist_p" fistrposi></a-entity>
-  </a-entity>
+      <a-entity id="right-hand" vive-controls="hand: right; model:false " oculus-touch-controls="hand: right; model:false;" windows-motion-controls="hand: right; model:true;" haptics="dur: 200; intensity: 1.0;force :1" trigger-button-listener ocu-button-listener>
       </a-entity>
+    </a-entity>
     </a-scene>
   </body>
 </html>
