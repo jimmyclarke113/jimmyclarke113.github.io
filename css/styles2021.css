@@ -60,7 +60,11 @@ a:hover {
   margin: 50px;
   position: relative;
 }
-.content a {
+.postHero {
+  position: relative;
+}
+.content a,
+.postTitle {
   padding: 0px 30px;
   position: absolute;
   bottom: 10px;
