@@ -79,7 +79,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.contentTitle:hover {
+.contentTitle a:hover {
   color: #f3f3f3;
 }
 .post {
