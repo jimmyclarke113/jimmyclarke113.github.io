@@ -29,3 +29,8 @@ a {
   height: 150px;
   background-color: #bcbcbc; 
 }
+.menu .logo,
+.menu .title
+.menu ul {
+  display: inline-block;
+}
