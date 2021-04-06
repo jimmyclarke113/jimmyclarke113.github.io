@@ -30,7 +30,8 @@ a {
   background-color: #bcbcbc; 
 }
 .menu .logo,
-.menu .title
+.menu .title,
+.menu a,
 .menu ul {
   display: inline-block;
 }
