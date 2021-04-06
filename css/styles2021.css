@@ -37,7 +37,8 @@ a {
   font-size: 30px;
 }
 .menu > a {
-  vertical-align: middle;
+  vertical-align: top;
+  line-height: 90px;
 }
 .menu ul {
   float: right;
