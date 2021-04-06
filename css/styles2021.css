@@ -67,6 +67,10 @@ a:hover {
   left: 10px;
   background-color: #bcbcbc;
 }
+.contentTitle {
+  background-size: 100%;
+  background-position: center;
+}
 footer {
   position: fixed;
   bottom: 0;
