@@ -28,7 +28,7 @@ a:visited {
   color: #272727;
 }
 a:hover {
-  color: #30B16B;
+  text-decoration: underline;
 }
 .menu {
   height: 150px;
@@ -88,6 +88,9 @@ a:hover {
 .post img {
   width: 100%;
   height: auto;
+}
+.post a {
+  color: #30B16B;
 }
 .postFooter {
   padding: 30px;
