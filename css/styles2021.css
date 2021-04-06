@@ -60,6 +60,12 @@ a:hover {
   margin: 50px;
   position: relative;
 }
+.content img {
+  filter: grayscale(100%);
+}
+.content img:hover {
+  filter: grayscale(0%);
+}
 .content a {
   padding: 10px;
   position: absolute;
