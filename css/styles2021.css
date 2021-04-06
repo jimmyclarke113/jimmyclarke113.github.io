@@ -63,7 +63,9 @@ a:hover {
 .content h3 {
   padding: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
+  left: 10px;
+  background-color: #bcbcbc;
 }
 footer {
   position: fixed;
