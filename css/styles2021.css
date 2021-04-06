@@ -9,8 +9,10 @@ body{
 }
 .menu .logo{
   background-image: url('/images/logo.png');
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
+  background-size: 150px;
+  background-repeat: no-repeat;
   padding-left: 25px;
 }
 .title,
