@@ -31,7 +31,7 @@ a {
 }
 .menu .logo,
 .menu .title,
-.menu a,
+.menu > a,
 .menu ul {
   display: inline-block;
 }
