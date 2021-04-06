@@ -3,7 +3,7 @@
   src: url('/css/Swords.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 html {
-  height: 100%;
+  padding-bottom: 50px;
 }
 body {
   color: #272727;
