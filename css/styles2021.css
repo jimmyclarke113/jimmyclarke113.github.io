@@ -3,17 +3,15 @@
   src: url('/css/Swords.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 body{
-  color:#616161;
+  color: #616161;
   font-family: 'Roboto', 'Helvetica', sans-serif;
   padding: 0;
 }
 .menu .logo{
-  background-image:url('/images/logo.jpg');
+  background-image: url('/images/logo.jpg');
   height: 100px;
   width: 100px;
-  border-radius: 100px;
-  float: right;
-  margin: 7px 8px;
+  padding-left: 25px;
 }
 .title,
 h3 {
