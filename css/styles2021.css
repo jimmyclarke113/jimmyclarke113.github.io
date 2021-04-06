@@ -62,6 +62,8 @@ a:hover {
 }
 .postHero {
   position: relative;
+  background-size: 100%;
+  background-position: center;
 }
 .content a,
 .postTitle {
