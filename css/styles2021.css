@@ -58,6 +58,12 @@ a:hover {
 }
 .content {
   margin: 50px;
+  position: relative;
+}
+.content h3 {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
 }
 footer {
   position: fixed;
