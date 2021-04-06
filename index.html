@@ -10,17 +10,17 @@ title: Jimmy Clarke
 	</ul>
 </div>
 {% for post in site.posts %}
-<div class="content {post.categoryclass}} {% if forloop.first == true %}first{% endif %}">
-	<a href="{{ post.url }}" title="{{post.title}}">
-		<div class="contentTitle" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
+<div class="content {% if forloop.first == true %}first{% endif %}">
+	<div class="contentTitle" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
+		<a href="{{ post.url }}" title="{{post.title}}">
 			<h3 class="{{post.categoryclass}}">{{post.title}}</h3>
-		</div>
-		<div class="contentDescription">
-			{{post.description}}
-		</div>
-		<div class="contentFooter">
-			<strong>{{ post.date | date_to_string }}</span>
-		</div>
-	</a>
+		</a>
+	</div>
+	<div class="contentDescription">
+		{{post.description}}
+	</div>
+	<div class="contentFooter">
+		<strong>{{ post.date | date_to_string }}</span>
+	</div>
 </div>
 {% endfor %}
