@@ -14,13 +14,8 @@ title: Jimmy Clarke
 	<div class="contentTitle" style="background-image:url('{{post.image}}');min-height:{{post.height}}px;">
 		<a href="{{ post.url }}" title="{{post.title}}">
 			<h3 class="{{post.categoryclass}}">{{post.title}}</h3>
+			<strong>{{ post.date | date_to_string }}</span>
 		</a>
-	</div>
-	<div class="contentDescription">
-		{{post.description}}
-	</div>
-	<div class="contentFooter">
-		<strong>{{ post.date | date_to_string }}</span>
 	</div>
 </div>
 {% endfor %}
