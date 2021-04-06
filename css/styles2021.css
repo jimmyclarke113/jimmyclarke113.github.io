@@ -28,7 +28,7 @@ a:visited {
   color: #272727;
 }
 a:hover {
-  color: #f3f3f3;
+  color: #c2c34f;
 }
 .menu {
   height: 150px;
@@ -78,6 +78,9 @@ a:hover {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+.contentTitle:hover {
+  color: #f3f3f3;
 }
 .post {
   margin: 50px;
