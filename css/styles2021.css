@@ -3,7 +3,7 @@
   src: url('/css/Swords.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 body{
-  color: #616161;
+  color: #272727;
   font-family: 'Roboto', 'Helvetica', sans-serif;
   padding: 0;
   margin: 0;
@@ -21,9 +21,11 @@ body{
 h3 {
   font-family: 'Swords';
 }
-a {
+a, 
+a:visited {
   font-family: 'Swords';
   text-decoration: none;
+  color: #272727;
 }
 .menu {
   height: 150px;
