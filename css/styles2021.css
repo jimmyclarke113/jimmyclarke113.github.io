@@ -34,4 +34,14 @@ a {
 .menu > a,
 .menu ul {
   display: inline-block;
+  font-size: 30px;
+}
+.menu > a {
+  vertical-align: middle;
+}
+.menu ul {
+  float: right;
+  height: 90px;
+  line-height: 90px;
+  padding-right: 25px;
 }
