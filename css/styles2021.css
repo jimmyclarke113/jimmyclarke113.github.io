@@ -2,6 +2,14 @@
   font-family: 'Swords';
   src: url('/css/Swords.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 } 
+.menu .logo{
+  background-image:url('images/logo.jpg');
+  height:100px;
+  width:100px;
+  border-radius:100px;
+  float:right;
+  margin: 7px 8px;
+}
 .title,
 h3 {
   font-family: 'Swords';
