@@ -72,10 +72,10 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.main {
+.post {
   margin: 50px;
 }
-.main img {
+.post img {
   width: 100%;
   height: auto;
 }
