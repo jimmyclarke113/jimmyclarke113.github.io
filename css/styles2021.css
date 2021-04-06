@@ -52,7 +52,8 @@ a:hover {
   line-height: 90px;
   padding-right: 25px;
 }
-.menu ul a {
+.menu ul a,
+.contentFooter {
   font-family: 'Swords';
 }
 footer {
