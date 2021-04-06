@@ -86,6 +86,17 @@ a:hover {
   width: 100%;
   height: auto;
 }
+.postFooter {
+  padding: 30px;
+  background-color: #eaeaea;
+}
+.postFooter ul {
+  margin: 0;
+  padding: 0;
+}
+.postFooter ul li  {
+  display: inline-block;
+}
 footer {
   position: fixed;
   bottom: 0;
