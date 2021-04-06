@@ -56,6 +56,9 @@ a:hover {
 .contentFooter {
   font-family: 'Swords';
 }
+.content {
+  margin: 50px;
+}
 footer {
   position: fixed;
   bottom: 0;
