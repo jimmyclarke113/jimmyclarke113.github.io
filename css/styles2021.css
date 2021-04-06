@@ -60,7 +60,7 @@ a:hover {
   margin: 50px;
   position: relative;
 }
-.content h3 {
+.content a {
   padding: 10px;
   position: absolute;
   bottom: 10px;
