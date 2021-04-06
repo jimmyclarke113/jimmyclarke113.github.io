@@ -67,7 +67,7 @@ a:hover {
   filter: grayscale(0%);
 }
 .content a {
-  padding: 10px;
+  padding: 0px 30px;
   position: absolute;
   bottom: 10px;
   left: 10px;
