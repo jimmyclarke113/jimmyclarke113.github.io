@@ -17,13 +17,9 @@ body{
   background-position: right;
   padding-left: 25px;
 }
-.title,
-h3 {
-  font-family: 'Swords';
-}
 a, 
 a:visited {
-  font-family: 'Swords';
+  font-family: 'Roboto', 'Helvetica', sans-serif;
   text-decoration: none;
   color: #272727;
 }
@@ -51,4 +47,5 @@ a:hover {
   height: 90px;
   line-height: 90px;
   padding-right: 25px;
+  font-family: 'Swords';
 }
