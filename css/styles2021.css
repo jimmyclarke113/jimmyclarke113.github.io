@@ -47,5 +47,8 @@ a:hover {
   height: 90px;
   line-height: 90px;
   padding-right: 25px;
+}
+.menu ul a {
   font-family: 'Swords';
 }
+  
