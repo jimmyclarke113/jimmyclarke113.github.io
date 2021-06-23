@@ -20,6 +20,20 @@
         <a-cylinder id="sword" position="0 0 0" radius="0.01" height="1" color="#DEDEDE"></a-cylinder>
       </a-entity>
       <a-entity laser-controls="hand: right"></a-entity>
+
+      <a-entity
+        tracked-controls  <!-- Hook into the Gamepad API for pose. -->
+        vive-controls  <!-- Vive button mappings. -->
+        oculus-touch-controls  <!-- Oculus button mappings. -->
+        hand-controls  <!-- Appearance (model), gestures, and events. -->
+        laser-controls <!-- Laser to interact with menus and UI. -->
+        sphere-collider  <!-- Listen when hand is in contact with an object. -->
+        grab  <!-- Provide ability to grab objects. -->
+        throw <!-- Provide ability to throw objects. -->
+        event-set="_event: grabstart; visible: false"  <!-- Hide hand when grabbing object. -->
+        event-set="_event: grabend; visible: true"  <!-- Show hand when no longer grabbing object. -->
+      >
+
     </a-scene>
   </body>
 </html>
