@@ -6,8 +6,7 @@
   <body>
     <a-scene fog="type: linear; color: #AAA">
       <a-assets>
-        <a-asset-item id="sword-obj" src="/assets/OBJ/SM_Wep_Sword_01.obj"></a-asset-item>
-        <a-asset-item id="sword-mtl" src="/assets/Tex/SM_Wep_Sword_01.fbx"></a-asset-item>
+        <a-asset-item id="sword-obj" src="/assets/OBJ/Sword_01.gltf"></a-asset-item>
       </a-assets>
       <a-entity camera look-controls wasd-controls>
         <a-entity text="value: 2353;" color="black" position="0 0 -1"></a-entity>
@@ -21,7 +20,7 @@
       <a-sky color="#ECECEC"></a-sky>
       <a-entity  oculus-touch-controls="hand: left"></a-entity>
       <a-entity oculus-touch-controls="hand: right" grip-button-listener>
-        <a-obj-model src="#sword-obj" mtl="#sword-mtl"></a-obj-model>
+        <a-gltf-model src="#sword-obj"></a-gltf-model>
         <a-cylinder id="sword" position="0.02 0.361 -0.337" radius="0.01" height="1" color="#4CC3D9" rotation="-43 0 0"></a-cylinder>
       </a-entity>
     </a-scene>
