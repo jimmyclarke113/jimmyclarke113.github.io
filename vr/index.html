@@ -1,14 +1,17 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="vr.js?ver=2346"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="vr.js?ver=2346"></script>
   </head>
   <body>
-    <a-scene>
-
+    <a-scene fog="type: linear; color: #AAA">
+      <a-assets>
+        <a-asset-item id="sword-obj" src="/assets/OBJ/SM_Wep_Sword_01.obj"></a-asset-item>
+        <a-asset-item id="sword-mtl" src="/assets/Tex/SM_Wep_Sword_01.fbx"></a-asset-item>
+      </a-assets>
       <a-entity camera look-controls wasd-controls>
-      <a-entity text="value: 2353;" color="black" position="0 0 -1"></a-entity>
-    </a-entity>
+        <a-entity text="value: 2353;" color="black" position="0 0 -1"></a-entity>
+      </a-entity>
 
 
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
@@ -16,10 +19,9 @@
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
-      <a-entity  oculus-touch-controls="hand: left">
-
-      </a-entity>
+      <a-entity  oculus-touch-controls="hand: left"></a-entity>
       <a-entity oculus-touch-controls="hand: right" grip-button-listener>
+        <a-obj-model src="#sword-obj" mtl="#sword-mtl"></a-obj-model>
         <a-cylinder id="sword" position="0.02 0.361 -0.337" radius="0.01" height="1" color="#4CC3D9" rotation="-43 0 0"></a-cylinder>
       </a-entity>
     </a-scene>
