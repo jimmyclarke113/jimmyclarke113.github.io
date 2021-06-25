@@ -7,7 +7,17 @@
   <script src="vr.js?ver=2346"></script>
   </head>
   <body>
-    <a-scene fog="type: linear; color: #AAA" networked-scene>
+    <a-scene fog="type: linear; color: #AAA" networked-scene="
+      serverURL: /;
+      app: <appId>;
+      room: <roomName>;
+      connectOnLoad: true;
+      onConnect: onConnect;
+      adapter: wseasyrtc;
+      audio: false;
+      video: false;
+      debug: false;"
+    >
       <a-assets>
         <template id="avatar-template">
            <a-sphere></a-sphere>
