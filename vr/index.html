@@ -8,9 +8,9 @@
   </head>
   <body>
     <a-scene fog="type: linear; color: #AAA" networked-scene="
-      serverURL: /;
-      app: <appId>;
-      room: <roomName>;
+      serverURL: https://jimmyclarke113.github.io/vr/;
+      app: test;
+      room: room1;
       connectOnLoad: true;
       onConnect: onConnect;
       adapter: wseasyrtc;
@@ -24,7 +24,7 @@
         </template>
       </a-assets>
       <a-entity camera look-controls wasd-controls>
-        <a-entity text="value: 2349;" color="black" position="0 0 -1"></a-entity>
+        <a-entity text="value: 1736;" color="black" position="0 0 -1"></a-entity>
       </a-entity>
       <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
       </a-entity>
