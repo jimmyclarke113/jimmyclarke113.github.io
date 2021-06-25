@@ -4,6 +4,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
   <script src="https://naf-examples.glitch.me/easyrtc/easyrtc.js"></script>
   <script src="https://unpkg.com/networked-aframe/dist/networked-aframe.min.js"></script>
+  <script>
+      // see issue https://github.com/networked-aframe/networked-aframe/issues/267
+      NAF.schemas.getComponentsOriginal = NAF.schemas.getComponents;
+      NAF.schemas.getComponents = (template) => {
+        if (!NAF.schemas.hasTemplate("#avatar-template")) {
+          NAF.schemas.add({
+            template: '#avatar-template',
+             components: [
+              'position',
+              'rotation',
+              {
+                selector: '.head',
+                component: 'material',
+                property: 'color'
+              }
+            ]
+          });
+        }
+        const components = NAF.schemas.getComponentsOriginal(template);
+        return components;
+      }
+    </script>
 
   <script src="vr.js?ver=2346"></script>
   </head>
@@ -25,7 +47,7 @@
         </template>
       </a-assets>
       <a-entity camera look-controls wasd-controls>
-        <a-entity text="value: 1740;" color="black" position="0 0 -1"></a-entity>
+        <a-entity text="value: 1742;" color="black" position="0 0 -1"></a-entity>
       </a-entity>
       <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
       </a-entity>
