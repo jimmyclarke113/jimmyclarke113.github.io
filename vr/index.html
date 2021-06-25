@@ -1,26 +1,19 @@
 <html>
   <head>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+  <script src="https://unpkg.com/networked-aframe/dist/networked-aframe.min.js"></script>
+
   <script src="vr.js?ver=2346"></script>
   </head>
   <body>
-    <a-scene fog="type: linear; color: #AAA">
+    <a-scene fog="type: linear; color: #AAA" networked-scene>
       <a-assets>
-        <a-asset-item id="sword-obj" src="https://jimmyclarke113.github.io/vr/assets/OBJ/SM_Wep_Sword_01.obj"></a-asset-item>
+        <template id="avatar-template">
+           <a-sphere></a-sphere>
+        </template>
       </a-assets>
-      <a-entity camera look-controls wasd-controls>
-        <a-entity text="value: 0021;" color="black" position="0 0 -1"></a-entity>
-      </a-entity>
-
-
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-entity  oculus-touch-controls="hand: left"></a-entity>
-      <a-entity oculus-touch-controls="hand: right" grip-button-listener>
-        <a-obj-model src="#sword-obj" color="#b76b01" scale="0.01 0.01 0.01" rotation="0 -90 43" position="0.038 -0.11 -0.11"></a-obj-model>
+      <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
       </a-entity>
     </a-scene>
   </body>
