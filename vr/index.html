@@ -23,6 +23,9 @@
            <a-sphere></a-sphere>
         </template>
       </a-assets>
+      <a-entity camera look-controls wasd-controls>
+        <a-entity text="value: 2349;" color="black" position="0 0 -1"></a-entity>
+      </a-entity>
       <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
       </a-entity>
     </a-scene>
