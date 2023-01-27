@@ -6,6 +6,14 @@
 /* red: #9F202E*/
 /* green: #18724C*/
 /* blue: #315A75*/
-body {
+
+.content {
   background-color: #E5DDCF;
+  display: inline-block;
+  width: calc(100% - 40px);
+}
+.sidebar {
+  background-color: #FCC761;
+  display: inline-block;
+  width: 40px;
 }
