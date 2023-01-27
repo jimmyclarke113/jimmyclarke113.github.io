@@ -10,10 +10,10 @@
 .content {
   background-color: #E5DDCF;
   display: inline-block;
-  width: calc(100% - 40px);
+  width: calc(100% - 60px);
 }
 .sidebar {
   background-color: #FCC761;
   display: inline-block;
-  width: 40px;
+  width: 60px;
 }
