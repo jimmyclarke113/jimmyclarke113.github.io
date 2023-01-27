@@ -6,9 +6,12 @@
 /* red: #9F202E*/
 /* green: #18724C*/
 /* blue: #315A75*/
-
+html {
+  height: 100%;
+}
 body {
   display: flex;
+  height: 100%;
 }
 .content {
   background-color: #E5DDCF;
