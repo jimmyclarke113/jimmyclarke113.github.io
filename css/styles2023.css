@@ -11,9 +11,11 @@
   background-color: #E5DDCF;
   display: inline-block;
   width: calc(100% - 60px);
+  height: 100%;
 }
 .sidebar {
   background-color: #FCC761;
   display: inline-block;
   width: 60px;
+  height: 100%;
 }
