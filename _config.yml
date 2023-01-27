@@ -1,3 +1,5 @@
 name: Jimmy Clarke
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+sass:
+    style: compressed
