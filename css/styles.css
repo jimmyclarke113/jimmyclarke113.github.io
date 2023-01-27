@@ -12,6 +12,7 @@ html {
 body {
   display: flex;
   height: 100%;
+  margin: 0;
 }
 .content {
   background-color: #E5DDCF;
